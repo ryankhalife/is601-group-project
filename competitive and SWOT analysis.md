@@ -2,10 +2,10 @@
 
 ## Competitive Analysis
 
-|                      | Starbucks            | Dunkin Donuts               | McDonald's                            |
-| -------------------- | -------------------- | --------------------------- | ------------------------------------- |
-| Archetype            | Creator, Explorer    | Regular Guy/Girl, Jester    | Caregiver, Regular Guy/Girl           |
-| Method of Persuasion | Social Proof, Liking | Reciprocity, Ethical appeal | Commitment & Consistency, Convenience |
+|                      | Starbucks            | Dunkin Donuts               | McDonald's (McCafe)                   | The Study Brew                   |
+| -------------------- | -------------------- | --------------------------- | ------------------------------------- | -------------------------------- |
+| Archetype            | Creator, Explorer    | Regular Guy/Girl, Jester    | Caregiver, Regular Guy/Girl           | Regular Guy/Girl, Sage           |
+| Method of Persuasion | Social Proof, Liking | Reciprocity, Ethical appeal | Commitment & Consistency, Convenience | Commitment & Consistency, Liking |
 
 ## SWOT Analysis
 
