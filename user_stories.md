@@ -39,4 +39,4 @@
     - Subtask 1: Install additional power outlets throughout the shop.
     - Subtask 2: Provide extension cords or power strips at larger tables.
 
-These user stories and subtasks give a clear picture of the initiatives "The Study Brew" can take to create a welcoming environment for students, offering both the physical comfort and the technological amenities needed for an optimal study and social experience.
+These user stories and subtasks give a clear picture of the initiatives "The Study Brew" can take to create a welcoming environment for students, offering both the physical comfort and the technological amenities needed for an optimal study and social experience.  
