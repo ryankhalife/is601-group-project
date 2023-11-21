@@ -1,5 +1,3 @@
-# is601-group-project
-
 ## Sign-in Sheet
 
 | Date        | Ryan Khalife | Bharadwaj Sarikonda |
