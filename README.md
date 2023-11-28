@@ -1,17 +1,12 @@
-# is601-group-project
+# IS601 Group Project
 
 ## Sign-in Sheet
 
-| Date        | Ryan Khalife | Bharadwaj Sarikonda |
-|-------------|:------------:|:--------------------:|
-| Nov 7, 2023 |      ✅      |          ✅          |
-| Nov 9, 2023 |      ✅      |           ✅            |
-| Nov 14, 2023|      ✅      |          ✅            |
-| Nov 16, 2023|      ✅      |           ✅            |
-| Nov 21, 2023|             |                      |
-| Nov 23, 2023|             |                      |
-| Nov 28, 2023|             |                      |
-| Nov 30, 2023|             |                      |
-| Dec 5, 2023 |             |                      |
-| Dec 7, 2023 |             |                      |
-| Dec 12, 2023|             |                      |
+- [Sign-in Sheet](./Signin_Sheet.md)
+
+## Business Analysis
+
+- [Competitive and SWOT Analysis](./competitive%20and%20SWOT%20analysis.md)
+- [Persona](./persona.md)
+- [Sales Funnel](./sales%20funnel.md)
+- [User Stories](./user_stories.md) 
