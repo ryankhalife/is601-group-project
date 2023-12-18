@@ -1,0 +1,34 @@
+.about {
+  padding-bottom: 94px;
+}
+
+.aboutContent {
+  margin-top: 20px;
+  display: flex;
+  gap: 150px;
+}
+
+.aboutContent > div:first-child {
+  align-self: center;
+}
+
+.aboutContent h2 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.aboutContent p {
+  max-width: 893px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutContent img {
+    display: none;
+  }
+  .aboutContent {
+    gap: 0px;
+  }
+}
