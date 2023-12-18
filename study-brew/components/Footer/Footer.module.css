@@ -1,0 +1,22 @@
+.footer {
+  background-image: url(/footer.png);
+  height: 311px;
+  background-size: cover;
+}
+
+.footerContainer {
+  display: flex;
+  gap: 78px;
+  align-items: center;
+  height: 100%;
+}
+
+.section h3 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.section a {
+  font-size: 15px;
+}
