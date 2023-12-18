@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 import Head from "next/head";
+import Navbar from "../components/Navbar/Navbar";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -11,7 +12,10 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <NextUIProvider>
-        <Component {...pageProps} />
+        <div className="container">
+          <Navbar />
+          <Component {...pageProps} />
+        </div>
       </NextUIProvider>
     </>
   );
