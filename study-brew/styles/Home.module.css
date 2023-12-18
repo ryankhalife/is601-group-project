@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600;700&family=Patua+One&display=swap");
 
 .hero {
   background-image: url("/hero1.png");
@@ -54,5 +54,60 @@
   }
   .heroText1 {
     margin-top: 200px;
+  }
+}
+
+.readmore {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.readmoreImage {
+  height: fit-content;
+  flex: 1;
+  flex-wrap: wrap;
+  min-width: 200px;
+}
+
+.readmoreText {
+  max-width: 407px;
+  font-family: "Patua One", cursive;
+  text-align: center;
+  flex: 1;
+  padding-right: 100px;
+  box-sizing: content-box;
+}
+
+.readmoreText > *:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.readmoreText h2 {
+  font-size: 32px;
+}
+
+.readmoreText p {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.readmoreText button {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+  background-color: #b36827;
+  height: 81px;
+}
+
+@media only screen and (max-width: 900px) {
+  .readmore {
+    flex-direction: column;
+  }
+  .readmoreText {
+    padding-right: 0px;
+    box-sizing: border-box;
   }
 }
