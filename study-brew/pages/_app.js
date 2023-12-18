@@ -12,10 +12,8 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <NextUIProvider>
-        <div className="container">
-          <Navbar />
-          <Component {...pageProps} />
-        </div>
+        <Navbar />
+        <Component {...pageProps} />
       </NextUIProvider>
     </>
   );

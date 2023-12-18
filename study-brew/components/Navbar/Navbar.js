@@ -12,7 +12,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className={styles.navbar}>
+    <div className={`${styles.navbar} container`}>
       <div className={styles.logoContainer}>
         <Image src="/studybrew-logo.png" alt="Study Brew Logo" width={175} height={170} />
       </div>
