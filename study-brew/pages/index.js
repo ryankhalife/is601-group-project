@@ -79,7 +79,7 @@ export default function Home() {
 
   return (
     <>
-      <div className={styles.hero}>
+      <section className={styles.hero}>
         <div className={`container ${styles.heroContainer}`}>
           <p className={styles.heroText1}>
             Fuel Your Success at The Study Brew: Enjoy Student Discounts on Specialty Coffee in Our Inspiring Study Space!
@@ -89,8 +89,8 @@ export default function Home() {
           </Button>
           <p className={styles.heroText2}>*Limited time offer till Dec31st- act now!</p>
         </div>
-      </div>
-      <div className={`${styles.readmore} container`}>
+      </section>
+      <section className={`${styles.readmore} container`}>
         <Image src={beans} alt="Picture of dark roasted coffee beans" width={922} height={357} className={styles.readmoreImage} />
         <div className={styles.readmoreText}>
           <h2>Rich. Intense. Indulgent.</h2>
@@ -102,8 +102,8 @@ export default function Home() {
             Read More
           </Button>
         </div>
-      </div>
-      <div className={styles.menu}>
+      </section>
+      <section className={styles.menu}>
         <h1>Popular Menu</h1>
         <div className="container">
           <div className={styles.cardsContainer}>
@@ -121,8 +121,8 @@ export default function Home() {
             })}
           </div>
         </div>
-      </div>
-      <div className={styles.testimonials}>
+      </section>
+      <section className={styles.testimonials}>
         <h1>Join 1,000+ scholars at their beloved Study Brew haven!</h1>
         <div className="container">
           <div className={styles.testimonialsContainer}>
@@ -140,7 +140,7 @@ export default function Home() {
             })}
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
