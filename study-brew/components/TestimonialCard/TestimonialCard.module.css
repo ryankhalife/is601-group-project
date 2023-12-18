@@ -1,0 +1,74 @@
+.card {
+  width: 420px;
+  height: 576px;
+  background: linear-gradient(180deg, #e1dcc9 0%, rgba(93, 29, 12, 0.37) 100%);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.cardHeader,
+.cardHeader img {
+  height: 150px;
+}
+
+.cardHeader img {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.cardHeader h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.cardHeader p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.cardHeader > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.starsContainer {
+  color: rgba(255, 160, 0, 1);
+}
+
+.star,
+.halfStar,
+.emptyStar {
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.halfStar {
+  position: relative;
+  color: white;
+}
+
+.halfStar::before {
+  content: "\2605";
+  position: absolute;
+  left: 0;
+  color: rgba(255, 160, 0, 1);
+  width: 50%;
+  overflow: hidden;
+}
+
+.emptyStar {
+  color: white;
+}
+
+.cardBody {
+  padding-top: 40px;
+}
+
+.cardBody p {
+  font-size: 24px;
+  line-height: 34px;
+  color: rgba(30, 30, 30, 1);
+}
