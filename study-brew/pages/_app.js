@@ -3,6 +3,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Script from "next/script";
+import Footer from "../components/Footer/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -26,6 +27,7 @@ function MyApp({ Component, pageProps }) {
       <NextUIProvider>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </NextUIProvider>
     </>
   );
