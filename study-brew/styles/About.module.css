@@ -1,4 +1,4 @@
-.about {
+.aboutus {
   padding-bottom: 94px;
 }
 
@@ -31,4 +31,17 @@
   .aboutContent {
     gap: 0px;
   }
+}
+
+.mission {
+  padding-top: 128px;
+  padding-bottom: 55px;
+  background-color: white;
+}
+
+.mission p {
+  max-width: 1308px;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
 }

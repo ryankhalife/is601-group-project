@@ -24,6 +24,17 @@ export default function About() {
           </div>
         </div>
       </section>
+      <section className={styles.mission}>
+        <div className="container">
+          <Title title="Our Mission" />
+          <p>
+            Our mission is to blend quality coffee with a supportive study environment, fostering a sense of community and academic growth.
+            At The Study Brew, we're dedicated to being more than a coffee shop; we're a haven where students can connect, relax, and find
+            inspiration. Every cup we serve is a commitment to enhancing your academic journey and nurturing a space where ideas and
+            friendships flourish.
+          </p>
+        </div>
+      </section>
     </main>
   );
 }
