@@ -1,0 +1,48 @@
+.navbar {
+  max-width: 1440px;
+
+  display: flex;
+}
+
+.logoContainer {
+  width: 450px;
+}
+
+.linkContainer {
+  display: flex;
+  flex-grow: 1;
+  gap: 20px;
+  border-bottom: #4e3c28 1px solid;
+  justify-content: flex-end;
+  max-width: 1034px;
+  padding: 30px 10px;
+  height: fit-content;
+}
+
+.link {
+  color: #693b23;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.active {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1024px) {
+  .logoContainer {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logoContainer {
+    display: none;
+  }
+
+  .linkContainer {
+    justify-content: center;
+    padding: 25px 0;
+  }
+}
