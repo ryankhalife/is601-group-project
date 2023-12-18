@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600;700&family=Patua+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600;700&family=Patua+One&family=Reem+Kufi+Fun&display=swap");
 
 .hero {
   background-image: url("/hero1.png");
@@ -73,7 +73,7 @@
 
 .readmoreText {
   max-width: 407px;
-  font-family: "Patua One", cursive;
+  font-family: "Patua One", serif;
   text-align: center;
   flex: 1;
   padding-right: 100px;
@@ -145,4 +145,32 @@
   justify-content: center;
   gap: 45px;
   flex-wrap: wrap;
+}
+
+.reward {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 26px;
+  background-color: #f2f3ec;
+  border-top: 7px solid black;
+  padding-bottom: 33px;
+}
+
+.reward button {
+  max-width: 974px;
+  white-space: normal;
+  display: inline;
+  font-family: "Reem Kufi Fun", sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  height: fit-content;
+  color: rgba(88, 54, 29, 1);
+  padding: 16px;
+  background-color: #eee5d6;
+}
+
+.reward button span {
+  text-decoration: underline;
 }
