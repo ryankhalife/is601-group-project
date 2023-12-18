@@ -144,7 +144,7 @@ export default function Home() {
       </section>
       <section className={styles.reward}>
         <Image src={reward} alt="Join the Study Brew Rewards" width={658} height={229} />
-        <Button size="lg" variant="shadow" color="warning">
+        <Button size="lg" variant="shadow" color="warning" onClick={() => window.open("http://eepurl.com/iGtKLU", "_self")}>
           Unlock your exclusive Brew Insider perks: a free large coffee awaits, plus endless refills — all at your fingertips when you{" "}
           <span>sign up</span> now!
         </Button>
