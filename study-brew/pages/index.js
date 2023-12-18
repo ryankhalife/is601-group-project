@@ -11,6 +11,7 @@ import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
 import emma from "../public/emma.png";
 import samantha from "../public/samantha.png";
 import alex from "../public/alex.png";
+import reward from "../public/reward.png";
 
 export default function Home() {
   const menu = [
@@ -140,6 +141,13 @@ export default function Home() {
             })}
           </div>
         </div>
+      </section>
+      <section className={styles.reward}>
+        <Image src={reward} alt="Join the Study Brew Rewards" width={658} height={229} />
+        <Button size="lg" variant="shadow" color="warning">
+          Unlock your exclusive Brew Insider perks: a free large coffee awaits, plus endless refills — all at your fingertips when you{" "}
+          <span>sign up</span> now!
+        </Button>
       </section>
     </>
   );
