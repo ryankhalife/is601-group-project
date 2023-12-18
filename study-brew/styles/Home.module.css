@@ -131,3 +131,18 @@
   gap: 45px;
   flex-wrap: wrap;
 }
+
+.testimonials h1 {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.testimonialsContainer {
+  margin-top: 48px;
+  padding-bottom: 66px;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  flex-wrap: wrap;
+}

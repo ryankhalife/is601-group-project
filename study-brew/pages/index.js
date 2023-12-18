@@ -7,6 +7,10 @@ import cappuccino from "../public/cappuccino.png";
 import blackcoffee from "../public/blackcoffee.png";
 import coldbrew from "../public/coldbrew.png";
 import MenuCard from "../components/MenuCard/MenuCard";
+import TestimonialCard from "../components/TestimonialCard/TestimonialCard";
+import emma from "../public/emma.png";
+import samantha from "../public/samantha.png";
+import alex from "../public/alex.png";
 
 export default function Home() {
   const menu = [
@@ -42,6 +46,37 @@ export default function Home() {
       price: "1.99",
     },
   ];
+
+  const testimonials = [
+    {
+      imagePath: emma,
+      imageDescription: "Picture of Emma",
+      name: "Emma",
+      major: "Law Student",
+      rating: 5,
+      review:
+        "I was looking for a quiet and cozy place to study for my finals, and The Study Brew has exceeded my expectations. The noise level is always low, the lighting is just right, and the seats are comfortable for hours of studying.",
+    },
+    {
+      imagePath: samantha,
+      imageDescription: "Picture of Samantha",
+      name: "Samantha",
+      major: "English Literature Student.",
+      rating: 4,
+      review:
+        "I absolutely love the community vibe at The Study Brew. I've met more classmates here than I have on campus! It's a great place to unwind, grab a fantastic cup of joe, and even finish a few chapters of reading.",
+    },
+    {
+      imagePath: alex,
+      imageDescription: "Picture of Alex",
+      name: "Alex",
+      major: "Computer Science Major.",
+      rating: 4.5,
+      review:
+        "The Study Brew is my new go-to spot for late-night cramming. The ambiance is perfect for focusing, and their coffee packs the punch I need to keep going. Plus, their student discounts really make a difference for my wallet!",
+    },
+  ];
+
   return (
     <>
       <div className={styles.hero}>
@@ -81,6 +116,25 @@ export default function Home() {
                   description={description}
                   rating={rating}
                   price={price}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </div>
+      <div className={styles.testimonials}>
+        <h1>Join 1,000+ scholars at their beloved Study Brew haven!</h1>
+        <div className="container">
+          <div className={styles.testimonialsContainer}>
+            {testimonials.map(({ imagePath, imageDescription, name, major, rating, review }) => {
+              return (
+                <TestimonialCard
+                  imagePath={imagePath}
+                  imageDescription={imageDescription}
+                  name={name}
+                  major={major}
+                  rating={rating}
+                  review={review}
                 />
               );
             })}
