@@ -111,3 +111,23 @@
     box-sizing: border-box;
   }
 }
+
+.menu {
+  background-color: #5d1d0c;
+}
+
+.menu h1 {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  background-color: #e1dcc9;
+}
+
+.cardsContainer {
+  margin-top: 60px;
+  padding-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  flex-wrap: wrap;
+}
