@@ -2,6 +2,7 @@ import styles from "../styles/About.module.css";
 import Title from "../components/Title/Title";
 import Image from "next/image";
 import about from "../public/about.png";
+import value from "../public/value.png";
 
 export default function About() {
   return (
@@ -10,7 +11,7 @@ export default function About() {
         <Title title="About Us" />
         <div className={styles.aboutContent}>
           <div>
-            <Image src={about} width={500} height={500} />
+            <Image src={about} />
           </div>
           <div>
             <h2>Our Company</h2>
@@ -32,6 +33,20 @@ export default function About() {
             At The Study Brew, we're dedicated to being more than a coffee shop; we're a haven where students can connect, relax, and find
             inspiration. Every cup we serve is a commitment to enhancing your academic journey and nurturing a space where ideas and
             friendships flourish.
+          </p>
+        </div>
+      </section>
+      <section className={`${styles.value}  container`}>
+        <Title title="Our Value & Personality" />
+        <div className={styles.valueContent}>
+          <Image src={value} />
+          <p>
+            At The Study Brew, we are grounded in the values of community, sustainability, and academic support. We understand the
+            importance of an environmentally conscious approach; hence, our coffee is sourced from sustainable farms, and our practices
+            prioritize the planet's well-being. Our personality is a blend of a knowledgeable mentor and a friendly neighbor, always ready
+            to offer a comforting space and a listening ear. Building meaningful connections with our student customers and contributing
+            positively to their academic and social lives are at the core of our ethos. We are more than a coffee shop; we are a partner in
+            the educational journey of our patrons.
           </p>
         </div>
       </section>

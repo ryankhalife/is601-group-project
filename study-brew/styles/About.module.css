@@ -45,3 +45,18 @@
   font-weight: 300;
   text-align: center;
 }
+
+.value {
+  padding-top: 48px;
+  padding-bottom: 55px;
+}
+
+.valueContent {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.valueContent > img {
+  align-self: center;
+}
