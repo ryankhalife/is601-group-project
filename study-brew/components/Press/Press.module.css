@@ -1,0 +1,22 @@
+.press {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+}
+
+.text p {
+  max-width: 850px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.019em;
+}
+
+.text span {
+  font-weight: 700;
+}
