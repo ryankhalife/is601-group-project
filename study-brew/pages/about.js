@@ -1,5 +1,6 @@
 import styles from "../styles/About.module.css";
 import Title from "../components/Title/Title";
+import Press from "../components/Press/Press";
 import Image from "next/image";
 import about from "../public/about.png";
 import value from "../public/value.png";
@@ -48,6 +49,19 @@ export default function About() {
             positively to their academic and social lives are at the core of our ethos. We are more than a coffee shop; we are a partner in
             the educational journey of our patrons.
           </p>
+        </div>
+      </section>
+      <section className={styles.press}>
+        <div className="container">
+          <Title title="Press mentions & awards" />
+          <Press
+            title="Awarded 'Best Campus Coffee Shop' by University Town Magazine:"
+            body={
+              "In 2022, \"The Study Brew\" was honored with the 'Best Campus Coffee Shop' award for its exceptional service, quality coffee, and dedication to creating a student-friendly environment."
+            }
+            imagePath={about}
+            imageDescription="test"
+          />
         </div>
       </section>
     </main>
