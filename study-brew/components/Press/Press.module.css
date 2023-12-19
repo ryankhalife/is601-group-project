@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  gap: 30px;
+}
+
+.flip {
+  flex-direction: row-reverse;
 }
 
 .text {
