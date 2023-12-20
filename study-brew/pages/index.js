@@ -128,7 +128,7 @@ export default function Home() {
       </section>
       <section className={styles.menu}>
         <h1>Popular Menu</h1>
-        <div className="container">
+        <div className="container box-content">
           <div className={styles.cardsContainer}>
             {menu.map(({ imagePath, imageDescription, title, description, rating, price }) => {
               return (
@@ -148,7 +148,7 @@ export default function Home() {
       </section>
       <section className={styles.testimonials}>
         <h1>Join 1,000+ scholars at their beloved Study Brew haven!</h1>
-        <div className="container">
+        <div className="container box-content">
           <div className={styles.testimonialsContainer}>
             {testimonials.map(({ imagePath, imageDescription, name, major, rating, review }) => {
               return (
