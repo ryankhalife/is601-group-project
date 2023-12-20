@@ -24,15 +24,6 @@
   font-weight: 300;
 }
 
-@media only screen and (max-width: 768px) {
-  .aboutContent img {
-    display: none;
-  }
-  .aboutContent {
-    gap: 0px;
-  }
-}
-
 .mission {
   padding-top: 128px;
   padding-bottom: 55px;
@@ -61,12 +52,6 @@
   align-self: center;
 }
 
-@media only screen and (max-width: 768px) {
-  .value img {
-    display: none;
-  }
-}
-
 .press {
   background-color: white;
   padding-top: 113px;
@@ -74,7 +59,19 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .aboutus,
+  .mission,
+  .value,
+  .press {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .aboutContent img,
+  .value img,
   .press img {
     display: none;
+  }
+  .aboutContent {
+    gap: 0px;
   }
 }
