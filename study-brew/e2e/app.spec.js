@@ -5,14 +5,14 @@ test.describe('App Component Tests', () => {
 
   // Check if the Navbar is rendered
   test('Navbar is rendered', async ({ page }) => {
-    await page.goto('http://localhost:3000/');
+    await page.goto('https://study-brew.vercel.app/');
     const navbar = await page.locator('text=Your Navbar Text Here'); // Replace with actual navbar text
     await expect(navbar).toBeVisible();
   });
 
   // Check if the Footer is rendered
 test('Footer is rendered', async ({ page }) => {
-  await page.goto('http://localhost:3000/'); // Adjust the URL if needed
+  await page.goto('https://study-brew.vercel.app/'); // Adjust the URL if needed
 
   // Check for text that is unique to the footer
   // You need to replace 'Privacy Policy' and 'Terms and Conditions' with the exact text you're using in your footer.
@@ -26,14 +26,14 @@ test('Footer is rendered', async ({ page }) => {
 
   // Check if the Cookie Consent Banner is rendered
   test('Cookie Consent Banner is rendered', async ({ page }) => {
-    await page.goto('http://localhost:3000/');
+    await page.goto('https://study-brew.vercel.app/');
     const consentBanner = await page.locator('text=Agree and continue');
     await expect(consentBanner).toBeVisible();
   });
 
   // Check if the page title is "Study Brew"
   test('Page title is correct', async ({ page }) => {
-    await page.goto('http://localhost:3000/');
+    await page.goto('https://study-brew.vercel.app/');
     await expect(page).toHaveTitle('Study Brew');
   });
 });
@@ -42,7 +42,7 @@ test.describe('About Page Tests', () => {
 
     // Navigate to the About page before each test
     test.beforeEach(async ({ page }) => {
-      await page.goto('http://localhost:3000/about');
+      await page.goto('https://study-brew.vercel.app/');
     });
   
     // Check if the main title of the About page is present
@@ -82,7 +82,7 @@ test.describe('Home Page Tests', () => {
 
     // Navigate to the home page before each test
     test.beforeEach(async ({ page }) => {
-      await page.goto('http://localhost:3000/');
+      await page.goto('https://study-brew.vercel.app/');
     });
   
     //Check if the hero section is rendered
