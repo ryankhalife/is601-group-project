@@ -25,6 +25,8 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Study Brew</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <meta name="description" content="Study Brew is the best coffee shop around!." />
+        <meta name="keywords" content="coffee, study, college, promotion" />
       </Head>
 
       <NextUIProvider>
