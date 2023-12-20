@@ -10,7 +10,7 @@ import ReactGA from "react-ga4";
 ReactGA.gtag("consent", "default", {
   analytics_storage: "denied",
 });
-ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS);
+ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || "G-XXXXXXXXXX");
 
 function MyApp({ Component, pageProps }) {
   const initConsent = ({ acceptedCategories }) => {
