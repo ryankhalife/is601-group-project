@@ -147,12 +147,15 @@
 }
 
 .reward {
+  background-color: #f2f3ec;
+  border-top: 7px solid black;
+}
+
+.reward > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 26px;
-  background-color: #f2f3ec;
-  border-top: 7px solid black;
   padding-bottom: 33px;
 }
 
