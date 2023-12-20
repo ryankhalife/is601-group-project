@@ -85,7 +85,16 @@ export default function Home() {
           <p className={styles.heroText1}>
             Fuel Your Success at The Study Brew: Enjoy Student Discounts on Specialty Coffee in Our Inspiring Study Space!
           </p>
-          <Button size="lg" variant="shadow" onClick={() => window.open("http://eepurl.com/iGtKLU", "_self")}>
+          <Button
+            size="lg"
+            variant="shadow"
+            onClick={() => window.open("http://eepurl.com/iGtKLU", "_self")}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                window.open("http://eepurl.com/iGtKLU", "_self");
+              }
+            }}
+          >
             Redeem Your Free Coffee Today!
           </Button>
           <p className={styles.heroText2}>*Limited time offer till Dec31st- act now!</p>
@@ -144,7 +153,17 @@ export default function Home() {
       </section>
       <section className={styles.reward}>
         <Image src={reward} alt="Join the Study Brew Rewards" width={658} height={229} />
-        <Button size="lg" variant="shadow" color="warning" onClick={() => window.open("http://eepurl.com/iGtKLU", "_self")}>
+        <Button
+          size="lg"
+          variant="shadow"
+          color="warning"
+          onClick={() => window.open("http://eepurl.com/iGtKLU", "_self")}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              window.open("http://eepurl.com/iGtKLU", "_self");
+            }
+          }}
+        >
           Unlock your exclusive Brew Insider perks: a free large coffee awaits, plus endless refills — all at your fingertips when you{" "}
           <span>sign up</span> now!
         </Button>
