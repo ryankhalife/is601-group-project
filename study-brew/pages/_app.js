@@ -2,7 +2,6 @@ import "../styles/globals.css";
 import { NextUIProvider } from "@nextui-org/react";
 import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
-import Script from "next/script";
 import Footer from "../components/Footer/Footer";
 import { CookieConsentBanner } from "@porscheofficial/cookie-consent-banner-react";
 import ReactGA from "react-ga4";
