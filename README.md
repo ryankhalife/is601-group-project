@@ -2,7 +2,7 @@
 
 ## Sign-in Sheet
 
-- [Sign-in Sheet](./Signin_Sheet.md)
+- [Sign-in Sheet](./resources/Signin_Sheet.md)
 
 ## Business Analysis
 
