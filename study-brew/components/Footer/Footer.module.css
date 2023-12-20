@@ -1,6 +1,6 @@
 .footer {
   background-image: url(/footer.png);
-  height: 311px;
+  height: var(--footer-height);
   background-size: cover;
 }
 

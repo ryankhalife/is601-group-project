@@ -1,7 +1,6 @@
 .navbar {
-  max-width: 1440px;
-
   display: flex;
+  height: var(--nav-height);
 }
 
 .logoContainer {
