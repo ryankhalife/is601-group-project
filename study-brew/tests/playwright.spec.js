@@ -107,4 +107,4 @@ test.describe('Home Page Tests', () => {
       const redeemButton = page.locator('button', { hasText: 'Redeem Your Free Coffee Today!' });
       await expect(redeemButton).toBeVisible();
       await expect(redeemButton).toBeEnabled();
-    });
+    });})
