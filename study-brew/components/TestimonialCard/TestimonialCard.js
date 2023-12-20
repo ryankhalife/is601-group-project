@@ -7,6 +7,29 @@ export default function TestimonialCard({ imagePath, imageDescription, name, maj
   rating = Math.min(Math.max(rating, 0), 5);
   rating = Math.round(rating * 2) / 2;
 
+  let stars = [];
+  for (let i = 0; i < Math.floor(rating); i++) {
+    stars.push(
+      <span key={name + i} className={styles.star}>
+        &#9733;
+      </span>
+    );
+  }
+  if (rating % 1 !== 0) {
+    stars.push(
+      <span key={name + "half"} className={styles.halfStar}>
+        &#9733;
+      </span>
+    );
+  }
+  for (let i = 5; i > Math.ceil(rating); i--) {
+    stars.push(
+      <span key={name + i} className={styles.emptyStar}>
+        &#9733;
+      </span>
+    );
+  }
+
   return (
     <Card classNames={{ base: styles.card, header: styles.cardHeader, body: styles.cardBody }}>
       <CardHeader>
@@ -15,9 +38,9 @@ export default function TestimonialCard({ imagePath, imageDescription, name, maj
           <h2>- {name}</h2>
           <p>{major}</p>
           <div className={styles.starsContainer}>
-            {Array(Math.floor(rating)).fill(<span className={styles.star}>&#9733;</span>)}
-            {rating % 1 !== 0 ? <span className={styles.halfStar}>&#9733;</span> : null}
-            {Array(Math.floor(5 - rating)).fill(<span className={styles.emptyStar}>&#9733;</span>)}
+            {stars.map((star) => {
+              return star;
+            })}
           </div>
         </div>
       </CardHeader>
