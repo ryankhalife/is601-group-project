@@ -4,30 +4,24 @@ import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Script from "next/script";
 import Footer from "../components/Footer/Footer";
-import { CookieConsentBanner, triggerCookieConsentBanner } from "@porscheofficial/cookie-consent-banner-react";
+import { CookieConsentBanner } from "@porscheofficial/cookie-consent-banner-react";
+import ReactGA from "react-ga4";
+
+ReactGA.gtag("consent", "default", {
+  analytics_storage: "denied",
+});
+ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || "G-XXXXXXXXXX");
 
 function MyApp({ Component, pageProps }) {
   const initConsent = ({ acceptedCategories }) => {
     if (acceptedCategories.includes("analytics")) {
-      ErrorTrackingService.init({
-        dsn: process.env.DSN,
-        environment: process.env.ENV,
+      ReactGA.gtag("consent", "update", {
+        analytics_storage: "granted",
       });
     }
   };
   return (
     <>
-      <Script src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
-        `}
-      </Script>
-
       <Head>
         <title>Study Brew</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />

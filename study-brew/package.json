@@ -12,7 +12,8 @@
     "framer-motion": "^10.16.16",
     "next": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-ga4": "^2.1.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.40.1",
