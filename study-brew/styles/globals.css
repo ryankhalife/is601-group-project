@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600;700&family=Patua+One&family=Poppins:wght@300;400;500;600;700&family=Reem+Kufi+Fun&display=swap");
+
+:root {
+  --nav-height: 170px;
+  --footer-height: 311px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e1dcc9;
+}
+
+.container {
+  max-width: 1472px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+.content-box {
+  max-width: calc(1472px + 140px);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+}
