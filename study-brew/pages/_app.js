@@ -4,7 +4,7 @@ import Head from "next/head";
 import Navbar from "../components/Navbar/Navbar";
 import Script from "next/script";
 import Footer from "../components/Footer/Footer";
-import { CookieConsentBanner, triggerCookieConsentBanner } from "@porscheofficial/cookie-consent-banner-react";
+import { CookieConsentBanner } from "@porscheofficial/cookie-consent-banner-react";
 
 function MyApp({ Component, pageProps }) {
   const initConsent = ({ acceptedCategories }) => {
