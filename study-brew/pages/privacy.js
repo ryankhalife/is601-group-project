@@ -13,7 +13,6 @@ export async function getStaticProps() {
 export default function Privacy({ html }) {
   return (
     <div className={styles.privacy}>
-      <h1>Privacy Policy</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>
   );
