@@ -1,0 +1,10 @@
+.custom404 {
+  height: calc(100vh - var(--nav-height) - var(--footer-height));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom404 h1 {
+  font-size: 40px;
+}

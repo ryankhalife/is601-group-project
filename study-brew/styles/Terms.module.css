@@ -1,0 +1,18 @@
+.terms {
+  min-height: calc(100vh - var(--nav-height) - var(--footer-height));
+  padding: 20px;
+}
+
+.terms h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.terms h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.terms p {
+  margin-bottom: 10px;
+}
