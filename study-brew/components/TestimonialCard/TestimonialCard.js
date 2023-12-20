@@ -12,7 +12,7 @@ export default function TestimonialCard({ imagePath, imageDescription, name, maj
       <CardHeader>
         <Image src={imagePath} alt={imageDescription} width={150} height={150} />
         <div>
-          <h3>- {name}</h3>
+          <h2>- {name}</h2>
           <p>{major}</p>
           <div className={styles.starsContainer}>
             {Array(Math.floor(rating)).fill(<span className={styles.star}>&#9733;</span>)}
