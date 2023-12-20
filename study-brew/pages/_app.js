@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="keywords" content="coffee, study, college, promotion" />
         <meta property="og:title" content="Study Brew" />
         <meta property="og:description" content="Study Brew is the best coffee shop around!" />
-        <meta property="og:image" content="https://studybrew.com/images/studybrew-logo.png" />
+        <meta property="og:image" content="https://study-brew.vercel.app/studybrew-logo.png" />
       </Head>
 
       <NextUIProvider>
