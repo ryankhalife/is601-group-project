@@ -70,15 +70,15 @@ test.describe('About Page Tests', () => {
   
   });
 
-  test.describe('Home Page Tests', () => {
+
+test.describe('Home Page Tests', () => {
 
     // Navigate to the home page before each test
     test.beforeEach(async ({ page }) => {
       await page.goto('http://localhost:3000/');
     });
   
-    //
-  Check if the hero section is rendered
+    //Check if the hero section is rendered
     test('Hero section is rendered', async ({ page }) => {
       const heroSection = page.locator('section', { hasText: 'Fuel Your Success at The Study Brew' });
       await expect(heroSection).toBeVisible();
@@ -108,4 +108,3 @@ test.describe('About Page Tests', () => {
       await expect(redeemButton).toBeVisible();
       await expect(redeemButton).toBeEnabled();
     });
-
