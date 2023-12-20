@@ -60,3 +60,9 @@
 .valueContent > img {
   align-self: center;
 }
+
+.press {
+  background-color: white;
+  padding-top: 113px;
+  padding-bottom: 92px;
+}
