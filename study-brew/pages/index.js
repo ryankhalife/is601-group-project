@@ -12,6 +12,7 @@ import emma from "../public/emma.png";
 import samantha from "../public/samantha.png";
 import alex from "../public/alex.png";
 import reward from "../public/reward.png";
+import { useRouter } from "next/router";
 
 export default function Home() {
   const menu = [
@@ -47,6 +48,8 @@ export default function Home() {
       price: "1.99",
     },
   ];
+
+  const router = useRouter();
 
   const testimonials = [
     {
@@ -108,7 +111,17 @@ export default function Home() {
             Enhanced by smoky and toasty undertones, our distinctive dark roasts embody our unique identity. Through our expert roasting
             process, we unveil the profound, chocolatey sweetness of the beans, resulting in a decadently intricate coffee experience.
           </p>
-          <Button size="lg" variant="shadow" color="warning">
+          <Button
+            size="lg"
+            variant="shadow"
+            color="warning"
+            onClick={() => router.push("/about")}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                router.push("/about");
+              }
+            }}
+          >
             Read More
           </Button>
         </div>
