@@ -85,7 +85,7 @@ export default function Home() {
           <p className={styles.heroText1}>
             Fuel Your Success at The Study Brew: Enjoy Student Discounts on Specialty Coffee in Our Inspiring Study Space!
           </p>
-          <Button size="lg" variant="shadow">
+          <Button size="lg" variant="shadow" onClick={() => window.open("http://eepurl.com/iGtKLU", "_self")}>
             Redeem Your Free Coffee Today!
           </Button>
           <p className={styles.heroText2}>*Limited time offer till Dec31st- act now!</p>
