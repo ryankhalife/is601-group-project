@@ -11,11 +11,18 @@ test.describe('App Component Tests', () => {
   });
 
   // Check if the Footer is rendered
-  test('Footer is rendered', async ({ page }) => {
-    await page.goto('http://localhost:3000/');
-    const footer = await page.locator('text=Your Footer Text Here'); // Replace with actual footer text
-    await expect(footer).toBeVisible();
-  });
+test('Footer is rendered', async ({ page }) => {
+  await page.goto('http://localhost:3000/'); // Adjust the URL if needed
+
+  // Check for text that is unique to the footer
+  // You need to replace 'Privacy Policy' and 'Terms and Conditions' with the exact text you're using in your footer.
+  const privacyPolicyLink = page.locator('text=Privacy Policy');
+  const termsAndConditionsLink = page.locator('text=Terms and Conditions');
+
+  // Verifying the footer sections are visible
+  await expect(privacyPolicyLink).toBeVisible();
+  await expect(termsAndConditionsLink).toBeVisible();
+});
 
   // Check if the Cookie Consent Banner is rendered
   test('Cookie Consent Banner is rendered', async ({ page }) => {
@@ -47,7 +54,7 @@ test.describe('About Page Tests', () => {
     // Check if the images are rendered
     test('Images are rendered', async ({ page }) => {
       const images = page.locator('img');
-      await expect(images).toHaveCount(5); // Number of images expected to render
+      await expect(images).toHaveCount(6); // Number of images expected to render
     });
   
     // Check if the press mentions are rendered
