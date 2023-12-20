@@ -12,10 +12,6 @@ ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS);
 function MyApp({ Component, pageProps }) {
   const initConsent = ({ acceptedCategories }) => {
     if (acceptedCategories.includes("analytics")) {
-      ErrorTrackingService.init({
-        dsn: process.env.DSN,
-        environment: process.env.ENV,
-      });
     }
   };
   return (
