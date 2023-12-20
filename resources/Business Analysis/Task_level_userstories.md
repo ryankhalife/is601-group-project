@@ -52,3 +52,5 @@
  Action: John receives a "Bring a Friend" special offer in the email.
  
  Result: John plans his next visit with a classmate to take advantage of the offer.
+
+ 
