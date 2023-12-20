@@ -9,7 +9,7 @@ export default function MenuCard({ imagePath, imageDescription, title, descripti
         <Image src={imagePath} alt={imageDescription} width={250} height={250} />
       </CardHeader>
       <CardBody>
-        <h3>{title}</h3>
+        <h2>{title}</h2>
         <p>{description}</p>
         <p>Ratings {rating}</p>
         <p>+ JUST ${price}</p>
