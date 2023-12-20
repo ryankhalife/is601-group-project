@@ -27,6 +27,9 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
         <meta name="description" content="Study Brew is the best coffee shop around!." />
         <meta name="keywords" content="coffee, study, college, promotion" />
+        <meta property="og:title" content="Study Brew" />
+        <meta property="og:description" content="Study Brew is the best coffee shop around!" />
+        <meta property="og:image" content="https://studybrew.com/images/studybrew-logo.png" />
       </Head>
 
       <NextUIProvider>
