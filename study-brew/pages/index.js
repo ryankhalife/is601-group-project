@@ -133,6 +133,7 @@ export default function Home() {
             {menu.map(({ imagePath, imageDescription, title, description, rating, price }) => {
               return (
                 <MenuCard
+                  key={title}
                   imagePath={imagePath}
                   imageDescription={imageDescription}
                   title={title}
@@ -152,6 +153,7 @@ export default function Home() {
             {testimonials.map(({ imagePath, imageDescription, name, major, rating, review }) => {
               return (
                 <TestimonialCard
+                  key={name}
                   imagePath={imagePath}
                   imageDescription={imageDescription}
                   name={name}
