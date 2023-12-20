@@ -10,10 +10,13 @@
     "@nextui-org/react": "^2.2.9",
     "@porscheofficial/cookie-consent-banner-react": "^4.0.1",
     "framer-motion": "^10.16.16",
+    "gray-matter": "^4.0.3",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-ga4": "^2.1.0"
+    "react-ga4": "^2.1.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1"
   },
   "devDependencies": {
     "@playwright/test": "^1.40.1",
