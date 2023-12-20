@@ -7,11 +7,18 @@ import Footer from "../components/Footer/Footer";
 import { CookieConsentBanner } from "@porscheofficial/cookie-consent-banner-react";
 import ReactGA from "react-ga4";
 
+// initialize with default consent state
+ReactGA.gtag("consent", "default", {
+  analytics_storage: "denied",
+});
 ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS);
 
 function MyApp({ Component, pageProps }) {
   const initConsent = ({ acceptedCategories }) => {
     if (acceptedCategories.includes("analytics")) {
+      ReactGA.gtag("consent", "update", {
+        analytics_storage: "granted",
+      });
     }
   };
   return (
