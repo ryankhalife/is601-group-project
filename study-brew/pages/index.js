@@ -164,7 +164,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className={styles.reward}>
+      <section className={`${styles.reward} container`}>
         <Image src={reward} alt="Join the Study Brew Rewards" width={658} height={229} />
         <Button
           size="lg"
