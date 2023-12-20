@@ -10,3 +10,7 @@
 - [Persona](./resources/Business%20Analysis/persona.md)
 - [Sales Funnel](./resources/Business%20Analysis/sales%20funnel.md)
 - [User Stories](./resources/Business%20Analysis/user_stories.md)
+
+## Figma Design Link:
+
+https://www.figma.com/file/f4DqCgWsdkQa5LSEJ3yBFu/Untitled?type=design&node-id=0-1&mode=design&t=BYFHXaLYpOiJDKyx-0
