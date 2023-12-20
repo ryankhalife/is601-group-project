@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.2.9",
+    "@porscheofficial/cookie-consent-banner-react": "^4.0.1",
     "framer-motion": "^10.16.16",
     "next": "latest",
     "react": "^18.2.0",
