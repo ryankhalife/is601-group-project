@@ -59,16 +59,12 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .aboutContent img {
+  .aboutContent img,
+  .value img,
+  .press img {
     display: none;
   }
   .aboutContent {
     gap: 0px;
-  }
-  .value img {
-    display: none;
-  }
-  .press img {
-    display: none;
   }
 }
