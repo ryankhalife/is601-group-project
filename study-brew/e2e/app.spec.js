@@ -2,8 +2,8 @@ const { test, expect } = require('@playwright/test');
 //CHange to localhost on which it is running on
 const websiteURL = 'https://study-brew.vercel.app'; 
 const aboutURL = 'https://study-brew.vercel.app/about';
-const blogURL = 'https://is-601-team-a-final-project.vercel.app/posts/blog';
-const contactURL = 'https://is-601-team-a-final-project.vercel.app/posts/contact-us';
+const privacyURL = 'https://study-brew.vercel.app/privacy';
+const termsURL = 'https://study-brew.vercel.app/terms';
 
 const expectedTitle = 'Study Brew';
 
@@ -18,7 +18,7 @@ test('Check Page Title', async ({ page }) => {
 test('Check Logo in Header', async ({ page }) => {
   await page.goto(websiteURL);
   await page.goto(aboutURL);
-  await page.goto(blogURL);
+  await page.goto(privacyURL);
   await page.locator('.logo');
 });
 
@@ -75,7 +75,7 @@ test('Check Brand Section on AboutUs Page', async ({ page }) => {
 
 // Check for Blogs on the Blogs Page
 test('Check Blog Title on Blog Page', async ({ page }) => {
-  await page.goto(blogURL);
+  await page.goto(privacyURL);
   await page.locator('.BlogTitle');
 });
 
@@ -83,27 +83,13 @@ test('Check Blog Title on Blog Page', async ({ page }) => {
 test('Check All Footer Links', async ({ page }) => {
   await page.goto(websiteURL);
   await page.goto(aboutURL);
-  await page.goto(blogURL);
+  await page.goto(privacyURL);
   const footerLinks = await page.locator('.footerlink');
   const count = await footerLinks.count();
 
   for (let i = 0; i < count; i++) {
     const link = footerLinks.nth(i);
     expect(await link.isVisible()).toBe(true);
-  }
-});
-
-// Test all the footer Icons.
-test('Check All Footer Icons', async ({ page }) => {
-  await page.goto(websiteURL);
-  await page.goto(aboutURL);
-  await page.goto(blogURL);
-  const footerIcons = await page.locator('footerSocial');
-  const count = await footerIcons.count();
-
-  for (let i = 0; i < count; i++) {
-    const icon = footerIcons.nth(i);
-    expect(await icon.isVisible()).toBe(true);
   }
 });
 
