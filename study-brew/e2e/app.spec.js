@@ -5,7 +5,7 @@ const aboutURL = 'https://study-brew.vercel.app/about';
 const blogURL = 'https://is-601-team-a-final-project.vercel.app/posts/blog';
 const contactURL = 'https://is-601-team-a-final-project.vercel.app/posts/contact-us';
 
-const expectedTitle = 'Beans & Brews';
+const expectedTitle = 'Study Brew';
 
 // Check the Home Page Title
 test('Check Page Title', async ({ page }) => {
