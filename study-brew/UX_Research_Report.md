@@ -39,7 +39,7 @@ Participants: Four testing sessions were conducted, with two different participa
 - *Second Iteration*:
   - *A2*: Enhanced CTA visibility. Feedback: Effective CTA.
   
-  ![figma final design](./first_latest1.png)
+  ![figma final design](study-brew/public/first_latest1.png)
   
   ![figma final design](./first_latest2.png)
 
