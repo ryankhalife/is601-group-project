@@ -1,0 +1,28 @@
+{
+    "private": true,
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "test": "npx playwright test"
+    },
+    "dependencies": {
+      "@fortawesome/fontawesome-svg-core": "^6.4.2",
+      "@fortawesome/free-brands-svg-icons": "^6.4.2",
+      "@fortawesome/free-solid-svg-icons": "^6.4.2",
+      "@fortawesome/react-fontawesome": "^0.2.0",
+      "date-fns": "^2.30.0",
+      "fs": "^0.0.1-security",
+      "gray-matter": "^4.0.3",
+      "next": "^13.4.12",
+      "path": "^0.12.7",
+      "react": "^18.2.0",
+      "react-gtm-module": "^2.0.11",
+      "react-native": "^0.72.3",
+      "remark": "^14.0.3",
+      "remark-html": "^15.0.2"
+    },
+    "devDependencies": {
+      "@playwright/test": "^1.36.2"
+    }
+  }
