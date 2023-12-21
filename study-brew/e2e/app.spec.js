@@ -97,16 +97,16 @@ test('Check All Footer Links', async ({ page }) => {
 test('Check Responsive Meta Tag for Render', async ({ page }) => {
   await page.goto(websiteURL);
   await page.goto(aboutURL);
-  await page.goto(blogURL);
+  await page.goto(privacyURL);
   const viewportMeta = await page.getAttribute('meta[name="viewport"]', 'content');
-  await expect(viewportMeta).toBe('width=device-width');
+  await expect(viewportMeta).toBe('initial-scale=1, width=device-width');
 });
 
 /* This test checks that the meta description for SEO is not empty */
 test('Check SEO Meta Description', async ({ page }) => {
   await page.goto(websiteURL);
   await page.goto(aboutURL);
-  await page.goto(blogURL);
+  await page.goto(privacyURL);
   const metaDescription = await page.getAttribute('meta[name="description"]', 'content');
   await expect(metaDescription).not.toBe('');
 });
