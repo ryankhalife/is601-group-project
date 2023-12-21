@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+const { test, expect } = require("@playwright/test");
 //CHange to localhost on which it is running on
 const websiteURL = 'https://study-brew.vercel.app'; 
 const aboutURL = 'https://study-brew.vercel.app/about';
