@@ -1,0 +1,51 @@
+name: Lighthouse
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+
+    - name: Run Lighthouse Audit on Base URL
+      uses: treosh/lighthouse-ci-action@v7
+      with:
+        urls: |
+          https://study-brew.vercel.app
+    
+    - name: Run Lighthouse Audit on About URL
+      uses: treosh/lighthouse-ci-action@v7
+      with:
+        urls: |
+          https://study-brew.vercel.app/about
+
+    - name: Run Lighthouse Audit on Privacy URL
+      uses: treosh/lighthouse-ci-action@v7
+      with:
+        urls: |
+          https://study-brew.vercel.app/privacy
+
+    - name: Run Lighthouse Audit on Terms URL
+      uses: treosh/lighthouse-ci-action@v7
+      with:
+        urls: |
+          https://study-brew.vercel.app/terms
+
+    - name: Upload Lighthouse Results
+      uses: actions/upload-artifact@v2
+      with:
+        name: lighthouse-results
+        path: '*.lighthouseci'
