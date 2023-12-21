@@ -12,23 +12,29 @@ Participants: Four testing sessions were conducted, with two different participa
 ## *Design Iterations:*
 - *Initial Designs*:
   - *A*: Traditional, text-heavy. Feedback: Overwhelming.
+  [!FIGMA 1ST DESIGN](./first_old1.png)
+  [!figma 1st design part 2](./first_old2.png)
+
   - *B*: Minimalist, less text. Feedback: Lacked personality.
+  [!figma design b](./second_old1.png)
+  [!figma design b part 2](./second_old2.png)
 
 - *First Iteration*:
   - *A1*: Less text, more visuals. Feedback: Better clarity, CTA needed emphasis.
+  [!figma 2nd design](./first_new1.png)
+  [!figma 2nd design part 2](./first_new2.png)
+
   - *B1*: Subtle brand elements added. Feedback: Liked enhancements, CTA improvement needed.
+  [!figma 2nd design b](./second_new1.png)
+  [!figma 2nd design b part 2](./second_new2.png)
 
 - *Second Iteration*:
   - *A2*: Enhanced CTA visibility. Feedback: Effective CTA.
+  [!figma final design](./first_latest1.png)
+  [!figma final design](./first_latest2.png)
   - *B2*: Interactive elements added. Feedback: Balanced aesthetic.
-
-- *Third Iteration*:
-  - *A3*: Narrative storytelling. Feedback: More relatable.
-  - *B3*: Real student testimonials. Feedback: Increased authenticity.
-
-- *Fourth Iteration*:
-  - *A4*: Refined color palette. Feedback: Improved navigation.
-  - *B4*: Streamlined user flow. Feedback: Efficient navigation.
+  [!figma 2nd final design](./second_new1.png)
+  [!figma 2nd final design part 2](./second_new2.png)
 
 ## *Results:*
 Participants preferred the later iterations for their balanced, engaging design and clear CTAs. Iterative feedback was crucial in enhancing the user experience.
